@@ -13,7 +13,7 @@ export const Main = () => {
                 <Name>Chris Lee</Name>
                 <MainTitle>brand designer</MainTitle>
                 <StyledText>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</StyledText>
-
+                 <StyledLink href={"#"}>get in touch</StyledLink>
         </MainStyled>
     );
 };
@@ -31,3 +31,6 @@ const Name = styled.h2``
 const MainTitle = styled.h1``
 
 const StyledSpan = styled.span``
+
+const StyledLink = styled.a`
+`

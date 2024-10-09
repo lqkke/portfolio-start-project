@@ -3,10 +3,10 @@ import styled, {css} from 'styled-components';
 import {Icon} from "./icon/Icon";
 
 type ButtonPropsType = {
-    ButtonType?:  "about" | "portfolio" | "blogs"
+    ButtonType?: "about" | "portfolio" | "blogs" | "subscribe"
 }
 
-const ButtonIcon =<Icon iconId={'arrow-right'} width={'10'} height={'9'} viewBox={'0 0 10 9'}/>
+const ButtonIcon = <Icon iconId={'arrow-right'} width={'10'} height={'9'} viewBox={'0 0 10 9'}/>
 
 const ButtonData = {
     about: {
@@ -21,6 +21,10 @@ const ButtonData = {
         title: "view all blogs",
         icon: ButtonIcon,
     },
+    subscribe: {
+        title: "subscribe it",
+        icon: ""
+    }
 }
 
 export const Button = (props: ButtonPropsType) => {
@@ -31,18 +35,24 @@ export const Button = (props: ButtonPropsType) => {
 };
 
 const StyledButton = styled.button<ButtonPropsType>`
-    
+
     ${props => props.ButtonType === "about" && css<ButtonPropsType>`
-    
+
     `}
 
     ${props => props.ButtonType === "portfolio" && css<ButtonPropsType>`
-    
+
     `}
 
     ${props => props.ButtonType === "blogs" && css<ButtonPropsType>`
-    
+
     `}
-    
-    
+
+    ${props => props.ButtonType === "subscribe" && css<ButtonPropsType>`
+
+    `}
+
+
+
+
 `
