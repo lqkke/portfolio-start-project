@@ -8,7 +8,7 @@ import {Logo} from "../../components/logo/Logo";
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper >
+            <FlexWrapper justify='space-between' >
                 <Logo></Logo>
                 <Menu></Menu>
             </FlexWrapper>
