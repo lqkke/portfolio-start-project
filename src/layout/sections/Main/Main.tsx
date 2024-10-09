@@ -12,7 +12,7 @@ export const Main = () => {
                 <Name>Chris Lee</Name>
                 <MainTitle>brand designer</MainTitle>
                 <p>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</p>
-                <Link linkType={'main'}/>
+                <Link linkType={'about'}/>
         </MainStyled>
     );
 };
