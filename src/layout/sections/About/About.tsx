@@ -9,7 +9,7 @@ import {SkillsStats} from "../../../components/skills/SkillsStats";
 export const About = () => {
     return (
         <StyledAbout>
-            <SectionTitle/>
+            <SectionTitle sectionTitleType={'about'}/>
             <FlexWrapper justify='space-between'>
                 <FlexWrapper direction='column' justify={'flex-start'}>
                     <StyledText>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus
