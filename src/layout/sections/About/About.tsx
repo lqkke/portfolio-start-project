@@ -23,4 +23,6 @@ export const About = () => {
     );
 };
 
-const StyledAbout = styled.div``
+const StyledAbout = styled.div`
+    height: 60vh;
+`

@@ -3,6 +3,7 @@ import {Skill} from "./Skill";
 import {FlexWrapper} from "../FlexWrapper";
 import styled from "styled-components";
 
+
 export const SkillsStats = () => {
     return (
         <StyledSkillsStats>
