@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import mainBackground from '../../../assets/images/header.webp'
 import {Header} from "../../header/Header";
-import {Link} from "../../../components/Link";
+import {Button} from "../../../components/Button";
 import {StyledText} from "../../../components/StyledText";
 
 export const Main = () => {
@@ -13,7 +13,7 @@ export const Main = () => {
                 <Name>Chris Lee</Name>
                 <MainTitle>brand designer</MainTitle>
                 <StyledText>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</StyledText>
-                <Link linkType={'main'}/>
+
         </MainStyled>
     );
 };
