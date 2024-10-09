@@ -2,21 +2,20 @@ import React from 'react';
 import styled from "styled-components";
 import mainBackground from '../../../assets/images/header.webp'
 import {Header} from "../../header/Header";
+import {Link} from "../../../components/Link";
 
 export const Main = () => {
     return (
         <MainStyled>
             <Header/>
-            <span>hi! everyone</span>
-            <h2>Chris Lee</h2>
-            <h1>brand designer</h1>
-            <p>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</p>
-            <button>get in touch</button>
+                <span>hi! everyone</span>
+                <Name>Chris Lee</Name>
+                <MainTitle>brand designer</MainTitle>
+                <p>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</p>
+                <Link linkType={'main'}/>
         </MainStyled>
     );
 };
-
-
 
 
 const MainStyled = styled.div`
@@ -26,3 +25,7 @@ const MainStyled = styled.div`
     flex-direction: column;
     color: white;
 `
+const Name = styled.h2``
+
+const MainTitle = styled.h1``
+
