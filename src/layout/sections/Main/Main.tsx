@@ -3,16 +3,17 @@ import styled from "styled-components";
 import mainBackground from '../../../assets/images/header.webp'
 import {Header} from "../../header/Header";
 import {Link} from "../../../components/Link";
+import {StyledText} from "../../../components/StyledText";
 
 export const Main = () => {
     return (
         <MainStyled>
             <Header/>
-                <span>hi! everyone</span>
+                <StyledSpan>hi! everyone</StyledSpan>
                 <Name>Chris Lee</Name>
                 <MainTitle>brand designer</MainTitle>
-                <p>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</p>
-                <Link linkType={'about'}/>
+                <StyledText>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</StyledText>
+                <Link linkType={'main'}/>
         </MainStyled>
     );
 };
@@ -29,3 +30,4 @@ const Name = styled.h2``
 
 const MainTitle = styled.h1``
 
+const StyledSpan = styled.span``
