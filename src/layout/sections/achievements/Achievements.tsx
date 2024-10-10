@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../SectionTitle";
-import { Achievement } from './Achievement';
+import { Awards } from './Awards';
 
 export const Achievements = () => {
     return (
         <StyledAchievements>
             <SectionTitle sectionTitleType={"achievement"}/>
-            <Achievement></Achievement>
+            <Awards/>
         </StyledAchievements>
     );
 };

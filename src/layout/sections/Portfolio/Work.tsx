@@ -14,7 +14,7 @@ type WorkPropsType = {
 
 
 
-const worksArr = {
+const works = {
     magazineFront: {
         img: magazineFrontImg,
         title: 'magazine front design',
@@ -42,7 +42,7 @@ const worksArr = {
 }
 
 export const Work = (props: WorkPropsType) => {
-    const {img, title} = worksArr[props.workType || 'magazineFront' ];
+    const {img, title} = works[props.workType || 'magazineFront' ];
     return (
         <StyledWork>
             <Img src={img}/>

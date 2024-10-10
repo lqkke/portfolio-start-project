@@ -53,7 +53,7 @@ const StyledSectionTitle = styled.div<{ img:string }>`
 `
 
 
-const SectionTitleText = styled.h2`
+const SectionTitleText = styled.h2`  ///refactor
 `
 
 
