@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {Work} from "./Work";
+import {WorkItem} from "./WorkItem";
 
 
 /*const workItem = ['magazineFront' , 'productBottle' , 'brochureMockup' , 'coffeeBottle' , 'productTag' , 'perfumeBrand']
@@ -19,12 +19,12 @@ export const Works = () => {
 export const Works = () => {
     return (
         <StyledWorks>
-            <Work workType={'magazineFront'}/>
-            <Work workType={'productBottle'}/>
-            <Work workType={'brochureMockup'}/>
-            <Work workType={'coffeeBottle'}/>
-            <Work workType={'productTag'}/>
-            <Work workType={'perfumeBrand'}/>
+            <WorkItem workType={'magazineFront'}/>
+            <WorkItem workType={'productBottle'}/>
+            <WorkItem workType={'brochureMockup'}/>
+            <WorkItem workType={'coffeeBottle'}/>
+            <WorkItem workType={'productTag'}/>
+            <WorkItem workType={'perfumeBrand'}/>
         </StyledWorks>
     )
 }

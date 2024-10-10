@@ -41,7 +41,7 @@ const works = {
     },
 }
 
-export const Work = (props: WorkPropsType) => {
+export const WorkItem = (props: WorkPropsType) => {
     const {img, title} = works[props.workType || 'magazineFront' ];
     return (
         <StyledWork>
