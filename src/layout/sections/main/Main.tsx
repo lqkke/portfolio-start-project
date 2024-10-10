@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import mainBackground from '../../../assets/images/header.webp'
 import {Header} from "../../header/Header";
-import {Button} from "../../../components/Button";
 import {StyledText} from "../../../components/StyledText";
 
 export const Main = () => {
