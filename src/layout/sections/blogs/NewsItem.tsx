@@ -42,6 +42,7 @@ export const NewsItem = (props: NewsItemPropsType ) => {
     );
 };
 
+//refactor parceling for button
 
 const StyledNewsItem = styled.div<{img: string}>`
     background-image: url(${({img}) => `${img}`});
