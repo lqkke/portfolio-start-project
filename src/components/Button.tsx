@@ -3,28 +3,39 @@ import styled, {css} from 'styled-components';
 import {Icon} from "./icon/Icon";
 
 type ButtonPropsType = {
-    ButtonType?: "about" | "portfolio" | "blogs" | "subscribe"
+    ButtonType?: "about" | "portfolio" | "blogs" | "subscribe" | "prevButton" | "nextButton";
 }
 
-const ButtonIcon = <Icon iconId={'arrow-right'} width={'10'} height={'9'} viewBox={'0 0 10 9'}/>
+const ButtonIconWhite = <Icon iconId={'arrow-right'} width={'10'} height={'9'} viewBox={'0 0 10 9'}/>
+const ButtonIconBlack = <Icon iconId={'blogs-button'} width={'10'} height={'9'} viewBox={'0 0 10 9'}/>
+const ButtonPrev = <Icon iconId={'prev-button'} width={'27'} height={'45'} viewBox={'0 0 27 45'}/>
+const ButtonNext = <Icon iconId={'next-button'} width={'27'} height={'45'} viewBox={'0 0 27 45'}/>
 
 const ButtonData = {
     about: {
         title: "about me",
-        icon: ButtonIcon,
+        icon: ButtonIconWhite,
     },
     portfolio: {
         title: "view all portfolio",
-        icon: ButtonIcon,
+        icon: ButtonIconWhite,
     },
     blogs: {
         title: "view all blogs",
-        icon: ButtonIcon,
+        icon: ButtonIconBlack,
+    },
+    prevButton: {
+        title: "",
+        icon: ButtonPrev,
+    },
+    nextButton: {
+        title: "",
+        icon: ButtonNext,
     },
     subscribe: {
         title: "subscribe it",
         icon: ""
-    }
+    },
 }
 
 export const Button = (props: ButtonPropsType) => {
@@ -48,9 +59,19 @@ const StyledButton = styled.button<ButtonPropsType>`
 
     `}
 
+    ${props => props.ButtonType === "prevButton" && css<ButtonPropsType>`
+
+    `}
+
+    ${props => props.ButtonType === "nextButton" && css<ButtonPropsType>`
+
+    `}
+
     ${props => props.ButtonType === "subscribe" && css<ButtonPropsType>`
 
     `}
+    
+    
 
 
 
