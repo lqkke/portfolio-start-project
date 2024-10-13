@@ -10,7 +10,7 @@ export const ContactMenu = (props: ContactMenuPropsType) => {
     return (
         <StyledLinks>
             {props.menuItems.map((name, index) => {
-                return <Link href={`#${name}`}>{name}</Link>
+                return <Link key={index} href={`#${name}`}>{name}</Link>
             })}
         </StyledLinks>
     );

@@ -6,7 +6,7 @@ import styled from "styled-components";
 export const SocialNetworks = () => {
     return (
         <StyledNetworks>
-            <link
+
         </StyledNetworks>
     );
 };

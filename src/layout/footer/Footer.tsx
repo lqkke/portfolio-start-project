@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {SocialNetworks} from "./SocialNetworks";
 
 export const Footer = () => {
     return (
