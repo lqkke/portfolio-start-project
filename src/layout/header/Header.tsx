@@ -6,10 +6,12 @@ import {Logo} from "../../components/logo/Logo";
 
 export const Header = () => {
     return (
-        <FlexWrapper justify='space-between'>
-            <Logo logoType={'White'}></Logo>
-            <Menu></Menu>
-        </FlexWrapper>
+        <StyledHeader>
+            <FlexWrapper justify='space-between'>
+                <Logo logoType={'White'}></Logo>
+                <Menu></Menu>
+            </FlexWrapper>
+        </StyledHeader>
 
     );
 };
