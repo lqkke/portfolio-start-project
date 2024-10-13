@@ -7,7 +7,7 @@ type ButtonPropsType = {
 }
 
 const ButtonIconWhite = <Icon iconId={'arrow-right'} width={'10'} height={'9'} viewBox={'0 0 10 9'}/>
-const ButtonIconBlack = <Icon iconId={'blogs-button'} width={'10'} height={'9'} viewBox={'0 0 10 9'}/>
+const ButtonIconBlack = <Icon iconId={'blogs-button'} width={'14'} height={'12'} viewBox={'0 0 14 12'}/>
 const ButtonPrev = <Icon iconId={'prev-button'} width={'27'} height={'45'} viewBox={'0 0 27 45'}/>
 const ButtonNext = <Icon iconId={'next-button'} width={'27'} height={'45'} viewBox={'0 0 27 45'}/>
 

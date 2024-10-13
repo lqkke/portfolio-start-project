@@ -4,7 +4,7 @@ import aboutImg from '../../assets/images/about.webp'
 import portfolioImg from '../../assets/images/portfolio.webp'
 import achievementImg from '../../assets/images/achievement.webp'
 import blogsImg from '../../assets/images/blogs.webp'
-import testimonialsImg from '../../assets/images/testimonial.webp'
+import testimonialsImg from '../../assets/images/testimonials.webp'
 
 type SectionTitlePropsType= {
     sectionTitleType: 'about' | 'portfolio' | 'achievement' | 'blogs' | 'testimonials'
