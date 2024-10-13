@@ -6,6 +6,7 @@ import {QuoteOfTheDay} from "./layout/sections/Quote/QuoteOfTheDay";
 import {Achievements} from "./layout/sections/achievements/Achievements";
 import {Blogs} from "./layout/sections/blogs/Blogs";
 import {Testimonials} from "./layout/sections/testimonials/Testimonials";
+import {Contact} from "./layout/sections/contact/Contact";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Achievements/>
             <Blogs/>
             <Testimonials/>
+            <Contact/>
         </>
     );
 }

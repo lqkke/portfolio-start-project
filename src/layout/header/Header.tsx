@@ -7,7 +7,7 @@ import {Logo} from "../../components/logo/Logo";
 export const Header = () => {
     return (
         <FlexWrapper justify='space-between'>
-            <Logo></Logo>
+            <Logo logoType={'White'}></Logo>
             <Menu></Menu>
         </FlexWrapper>
 
