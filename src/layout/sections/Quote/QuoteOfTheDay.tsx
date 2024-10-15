@@ -12,7 +12,7 @@ export const QuoteOfTheDay = () => {
     );
 };
 
-const StyledQuote = styled.div`
+const StyledQuote = styled.section`
     background-color: #0D0D0D;
     height: 50vh;
 `

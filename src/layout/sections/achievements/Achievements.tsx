@@ -12,5 +12,5 @@ export const Achievements = () => {
     );
 };
 
-const StyledAchievements = styled.div``
+const StyledAchievements = styled.section``
 

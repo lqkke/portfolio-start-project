@@ -14,6 +14,6 @@ export const Portfolio = () => {
     );
 };
 
-const StyledPortfolio = styled.div`
+const StyledPortfolio = styled.section`
     
 `

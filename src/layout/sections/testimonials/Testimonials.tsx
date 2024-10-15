@@ -13,6 +13,6 @@ export const Testimonials = () => {
     );
 };
 
-const StyledTestimonials = styled.div`
+const StyledTestimonials = styled.section`
     background-image: url(${testimonialsBackground});
 `

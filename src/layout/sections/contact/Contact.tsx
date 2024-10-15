@@ -23,7 +23,7 @@ export const Contact = () => {
     );
 };
 
-const StyledContact = styled.div``
+const StyledContact = styled.section``
 
 const Text = styled.p``
 

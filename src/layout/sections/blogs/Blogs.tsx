@@ -14,4 +14,4 @@ export const Blogs = () => {
     );
 };
 
-const StyledBlogs = styled.div``
+const StyledBlogs = styled.section``

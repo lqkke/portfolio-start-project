@@ -18,7 +18,7 @@ export const Main = () => {
 };
 
 
-const MainStyled = styled.div`
+const MainStyled = styled.main`
     background-image: url(${mainBackground});
     min-height: 70vh;
     display: flex;
