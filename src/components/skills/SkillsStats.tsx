@@ -1,17 +1,22 @@
 import React from 'react';
 import {Skill} from "./Skill";
-import {FlexWrapper} from "../FlexWrapper";
 import styled from "styled-components";
+
+const skillsData = [
+    { title: 'Photoshop', progress: 81 },
+    { title: 'Illustrator', progress: 92 },
+    { title: 'Figma', progress: 89 },
+    { title: 'After Effect', progress: 76 },
+    { title: 'InDesign', progress: 92 },
+];
 
 
 export const SkillsStats = () => {
     return (
         <StyledSkillsStats>
-            <Skill title={'Photoshop'} progress={81}/>
-            <Skill title={'Illustrator'} progress={92}/>
-            <Skill title={'Figma'} progress={89}/>
-            <Skill title={'after effect'} progress={76}/>
-            <Skill title={'indesign'} progress={92}/>
+            {skillsData.map((skill, index) => (
+                <Skill key={index} title={skill.title} progress={skill.progress} />
+            ))}
         </StyledSkillsStats>
     );
 };
