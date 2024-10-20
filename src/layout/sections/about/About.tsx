@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {StyledText} from "../../../components/StyledText";
 import {Button} from "../../../components/Button";
 import {SectionTitle} from "../SectionTitle";
 import {SkillsStats} from "../../../components/skills/SkillsStats";
@@ -26,3 +25,5 @@ export const About = () => {
 const StyledAbout = styled.section`
     height: 60vh;
 `
+
+const StyledText = styled.p``
