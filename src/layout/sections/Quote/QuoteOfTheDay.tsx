@@ -2,10 +2,17 @@ import React from 'react';
 import styled from "styled-components";
 import {QuoteText} from "./QuoteText";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Icon} from "../../../components/icon/Icon";
 
 export const QuoteOfTheDay = () => {
     return (
         <StyledQuote>
+                <div style={{position: 'absolute', left: '72px'}}>
+                    <Icon iconId={"quoteTop"} width={"385"} height={"321"} viewBox={"0 0 385 321"}/>
+                </div>
+                <div style={{position: 'absolute', right: '60px', bottom: '0'}}>
+                    <Icon iconId={"quoteBottom"} width={"385"} height={"321"} viewBox={"0 0 385 321"}/>
+                </div>
             <FlexWrapper direction="column">
                 <QuoteTitle>quote of the day</QuoteTitle>
                 <QuoteText
@@ -20,7 +27,10 @@ const StyledQuote = styled.section`
     background-color: #0D0D0D;
     height: 100%;
     margin-bottom: 146px;
+    position: relative;
 `
+
+
 
 const QuoteTitle = styled.h2`
     font-family: "Jost", sans-serif;
