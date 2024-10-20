@@ -14,4 +14,8 @@ export const News = () => {
 
 
 const StyledNews = styled.div`
+    display: flex;
+    gap: 46px;
+    justify-content: center;
+    margin-bottom: 62px;
 `

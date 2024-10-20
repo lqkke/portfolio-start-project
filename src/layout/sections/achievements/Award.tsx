@@ -44,6 +44,7 @@ const AwardDescription = styled.span`
     color: #282828;
     display: inline-block;
     position: relative;
+    
 
     &::after {
         content: '';

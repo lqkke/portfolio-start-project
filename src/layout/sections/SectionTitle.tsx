@@ -34,7 +34,7 @@ const sections = {
     blogs: {
         img: blogsImg,
         text: 'latest news',
-        width: '353px',
+        width: '344px',
         height: '180px',
         margin: '0 auto',
     },

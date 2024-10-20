@@ -22,7 +22,7 @@ const ButtonData = {
     },
     blogs: {
         title: "view all blogs",
-        icon: ButtonIconBlack,
+        icon: '',
     },
     prevButton: {
         title: "",
@@ -77,6 +77,16 @@ const StyledButton = styled.button<ButtonPropsType>`
     `}
 
     ${props => props.ButtonType === "blogs" && css<ButtonPropsType>`
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 2.34523;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #111;
+        border: none;
+        background-color: transparent;
 
     `}
 
