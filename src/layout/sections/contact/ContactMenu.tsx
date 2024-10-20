@@ -16,6 +16,28 @@ export const ContactMenu = (props: ContactMenuPropsType) => {
     );
 };
 
-const StyledLinks = styled.div``
+const StyledLinks = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; 
+    flex-wrap: wrap;
+    width: 306px;
+    height: 220px;
+    flex-grow: 1;
+    
+`
 
-const Link = styled.a``
+const Link = styled.a`
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 3.305;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #8f8f8f;
+    text-decoration: none;
+    
+    &:hover {
+        color: #3f3f3f;
+    }
+`

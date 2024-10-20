@@ -18,4 +18,5 @@ const StyledTestimonials = styled.section`
     object-fit: cover;
     object-position: top;
     padding-top:111px;
+    margin-bottom: 153px;
 `

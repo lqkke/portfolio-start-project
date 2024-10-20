@@ -102,6 +102,18 @@ const StyledButton = styled.button<ButtonPropsType>`
     `}
 
     ${props => props.ButtonType === "subscribe" && css<ButtonPropsType>`
+        width: 304px; 
+        height: 46px;
+        background: #181818;
+        border: none;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 100px;
 
     `}
     
