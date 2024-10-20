@@ -29,7 +29,7 @@ const MainStyled = styled.main`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: white;
+    margin-bottom: 92px;
 `
 
 const StyledSpan = styled.span`

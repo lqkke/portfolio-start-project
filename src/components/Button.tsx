@@ -14,7 +14,7 @@ const ButtonNext = <Icon iconId={'next-button'} width={'27'} height={'45'} viewB
 const ButtonData = {
     about: {
         title: "about me",
-        icon: ButtonIconWhite,
+        icon: '',
     },
     portfolio: {
         title: "view all portfolio",
@@ -41,14 +41,24 @@ const ButtonData = {
 export const Button = (props: ButtonPropsType) => {
     const {title, icon} = ButtonData[props.ButtonType || "about"];
     return (
-        <StyledButton>{title} {icon}</StyledButton>
+        <StyledButton ButtonType={props.ButtonType}>{title} {icon}</StyledButton>
     );
 };
 
 const StyledButton = styled.button<ButtonPropsType>`
-
+    cursor: pointer;
     ${props => props.ButtonType === "about" && css<ButtonPropsType>`
-
+        width: 194px;
+        height: 62px;
+        background: #181818;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 2.34523;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
     `}
 
     ${props => props.ButtonType === "portfolio" && css<ButtonPropsType>`

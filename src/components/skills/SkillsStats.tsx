@@ -22,7 +22,8 @@ export const SkillsStats = () => {
 };
 
 const StyledSkillsStats = styled.div`
-    min-width: 35vh;
-    min-height: 340px;
+    width: 490px;
+    height: 340px;
+    margin-bottom: 118px;
 `
 
