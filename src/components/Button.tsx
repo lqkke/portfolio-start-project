@@ -73,10 +73,7 @@ const StyledButton = styled.button<ButtonPropsType>`
         text-align: center;
         color: #fff;
         background: #181818;
-        position: absolute;
-        bottom: 116px;
-        right: 629px;
-
+        margin-top: 37px;
     `}
 
     ${props => props.ButtonType === "blogs" && css<ButtonPropsType>`

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {WorkItem} from "./WorkItem";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Button} from "../../../components/Button";
 
 type WorkType = 'magazineFront' | 'productBottle' | 'brochureMockup' | 'coffeeBottle' | 'productTag' | 'perfumeBrand'
 
@@ -32,6 +33,7 @@ export const Works = () => {
                 {rightWorksData.map((work, index) => (
                     <WorkItem key={index} workType={work.workType} />
                 ))}
+                <Button ButtonType={"portfolio"}/>
             </FlexWrapper>
         </StyledWorks>
     )
