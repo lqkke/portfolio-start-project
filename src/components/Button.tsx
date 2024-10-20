@@ -91,11 +91,14 @@ const StyledButton = styled.button<ButtonPropsType>`
     `}
 
     ${props => props.ButtonType === "prevButton" && css<ButtonPropsType>`
+        border: none;
+        background-color: transparent;
 
     `}
 
     ${props => props.ButtonType === "nextButton" && css<ButtonPropsType>`
-
+        border: none;
+        background-color: transparent;
     `}
 
     ${props => props.ButtonType === "subscribe" && css<ButtonPropsType>`

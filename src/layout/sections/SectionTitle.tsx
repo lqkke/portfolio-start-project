@@ -16,6 +16,9 @@ const sections = {
         width: '353px',
         height: '180px',
         margin: '0 0',
+        background: '#fff',
+        color: '#111',
+        borderColor: '#f8f8f8',
     },
     portfolio: {
         img: portfolioImg,
@@ -23,6 +26,9 @@ const sections = {
         width: '560px',
         height: '180px',
         margin: '0 auto',
+        background: '#fff',
+        color: '#111',
+        borderColor: '#f8f8f8',
     },
     achievement: {
         img: achievementImg,
@@ -30,6 +36,9 @@ const sections = {
         width: '727px',
         height: '180px',
         margin: '0 auto',
+        background: '#fff',
+        color: '#111',
+        borderColor: '#f8f8f8',
     },
     blogs: {
         img: blogsImg,
@@ -37,26 +46,32 @@ const sections = {
         width: '344px',
         height: '180px',
         margin: '0 auto',
+        background: '#fff',
+        color: '#111',
+        borderColor: '#f8f8f8',
     },
     testimonials: {
         img: testimonialsImg,
         text: 'what clients says',
-        width: '353px',
+        width: '711x',
         height: '180px',
         margin: '0 auto',
+        background: '#000',
+        color: '#fff',
+        borderColor: '#333',
     },
 }
 
 export const SectionTitle = (props: SectionTitlePropsType) => {
-    const {img, text, width, height, margin} = sections[props.sectionTitleType || 'about']
+    const {img, text, width, height, margin, background, color, borderColor } = sections[props.sectionTitleType || 'about']
     return (
-        <StyledSectionTitle img={img} width={width} height={height} margin={margin}>
-            <SectionTitleText> {text}</SectionTitleText>
+        <StyledSectionTitle img={img} width={width} height={height} margin={margin} >
+            <SectionTitleText background={background} color={color} borderColor={borderColor}> {text}</SectionTitleText>
         </StyledSectionTitle>
     );
 };
 
-const StyledSectionTitle = styled.div<{ img:string, width:string, height:string, margin: string }>`
+const StyledSectionTitle = styled.div<{ img:string, width:string, height:string, margin: string}>`
     background-image: url(${({img}) => `${img}`});
     background-repeat: no-repeat;
     background-position: center;
@@ -69,18 +84,18 @@ const StyledSectionTitle = styled.div<{ img:string, width:string, height:string,
 `
 
 
-const SectionTitleText = styled.h2`
+const SectionTitleText = styled.h2<{background: string, color: string, borderColor: string}>`
     font-family: "Inconsolata", sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 1.26023;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #111;
+    color: ${({color}) => color};
     display:inline-block;
     padding: 0 12px;
-    border: 2px solid #f8f8f8;
-    background: #fff;
+    border: 2px solid ${({borderColor}) => borderColor};
+    background: ${({background}) => background};
 `
 
 
