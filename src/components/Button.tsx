@@ -18,7 +18,7 @@ const ButtonData = {
     },
     portfolio: {
         title: "view all portfolio",
-        icon: ButtonIconWhite,
+        icon: '',
     },
     blogs: {
         title: "view all blogs",
@@ -62,6 +62,20 @@ const StyledButton = styled.button<ButtonPropsType>`
     `}
 
     ${props => props.ButtonType === "portfolio" && css<ButtonPropsType>`
+        width: 292px;
+        height: 62px;
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 2.34523;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        background: #181818;
+        position: absolute;
+        bottom: 116px;
+        right: 629px;
 
     `}
 

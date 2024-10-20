@@ -15,52 +15,57 @@ const sections = {
         text: 'who am i',
         width: '353px',
         height: '180px',
+        margin: '0 0',
     },
     portfolio: {
         img: portfolioImg,
         text: 'latest works',
-        width: '353px',
+        width: '560px',
         height: '180px',
+        margin: '0 auto',
     },
     achievement: {
         img: achievementImg,
         text: 'awards and recognition',
         width: '353px',
         height: '180px',
+        margin: '0 auto',
     },
     blogs: {
         img: blogsImg,
         text: 'latest news',
         width: '353px',
         height: '180px',
+        margin: '0 auto',
     },
     testimonials: {
         img: testimonialsImg,
         text: 'what clients says',
         width: '353px',
         height: '180px',
+        margin: '0 auto',
     },
 }
 
 export const SectionTitle = (props: SectionTitlePropsType) => {
-    const {img, text, width, height} = sections[props.sectionTitleType || 'about']
+    const {img, text, width, height, margin} = sections[props.sectionTitleType || 'about']
     return (
-        <StyledSectionTitle img={img} width={width} height={height}>
+        <StyledSectionTitle img={img} width={width} height={height} margin={margin}>
             <SectionTitleText> {text}</SectionTitleText>
         </StyledSectionTitle>
     );
 };
 
-const StyledSectionTitle = styled.div<{ img:string, width:string, height:string }>`
+const StyledSectionTitle = styled.div<{ img:string, width:string, height:string, margin: string }>`
     background-image: url(${({img}) => `${img}`});
     background-repeat: no-repeat;
     background-position: center;
     width: ${({ width }) => width};
     height: ${({ height }) => height};
+    margin: ${({ margin }) => margin} 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 `
 
 
