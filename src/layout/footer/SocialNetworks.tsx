@@ -38,13 +38,21 @@ export const SocialNetworks = () => {
 
 const StyledNetworks = styled.ul`
     display: flex;
+    li + li {
+        margin-left:66px;
+    }
 `
 
 const SocialItem = styled.li`
     list-style: none;
+    height: 20px;
+    width: 20px;
+    
 `
 
-const SocialLink = styled.a``
+const SocialLink = styled.a`
+    
+`
 
 
 
