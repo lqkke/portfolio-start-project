@@ -55,9 +55,32 @@ export const WorkItem = (props: WorkPropsType) => {
 
 
 const StyledWork = styled.div`
+    position: relative;
+    display: inline-block;
+    text-align: right;
 `
 
 const Img = styled.img`
+    margin-bottom: 18px;
 `
 
-const WorkTitle = styled.h3``
+const WorkTitle = styled.h3`
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.03846;
+    text-transform: lowercase;
+    color: #2f2f2f;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -8px; /* Отступ подчеркивания от текста */
+        left: 0;
+        width: 100%;
+        height: 3px; /* Толщина подчеркивания */
+        background-color: #2f2f2f; /* Цвет подчеркивания */
+    }
+`
