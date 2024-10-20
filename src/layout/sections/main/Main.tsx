@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import mainBackground from '../../../assets/images/header.webp'
+import mainBackground from '../../../assets/images/mainNew.png'
 import {Header} from "../../header/Header";
 import {StyledText} from "../../../components/StyledText";
 
@@ -20,7 +20,7 @@ export const Main = () => {
 
 const MainStyled = styled.main`
     background-image: url(${mainBackground});
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: white;

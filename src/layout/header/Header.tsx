@@ -17,7 +17,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-
+    margin: 70px;
 `
 
 
