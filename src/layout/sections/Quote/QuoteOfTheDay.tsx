@@ -19,6 +19,7 @@ export const QuoteOfTheDay = () => {
 const StyledQuote = styled.section`
     background-color: #0D0D0D;
     height: 100%;
+    margin-bottom: 146px;
 `
 
 const QuoteTitle = styled.h2`

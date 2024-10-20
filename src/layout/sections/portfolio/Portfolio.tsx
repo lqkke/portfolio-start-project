@@ -9,7 +9,7 @@ export const Portfolio = () => {
         <StyledPortfolio>
             <Container>
                 <SectionTitle sectionTitleType={"portfolio"}/>
-                <Works/>
+                    <Works/>
             </Container>
         </StyledPortfolio>
     );

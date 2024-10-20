@@ -24,10 +24,34 @@ export const Award = (props: AwardPropsType) => {
 };
 
 const StyledAward = styled.div`
-    border-bottom: 1px solid #bfbfbf;
-    width: 15vw;
 `
 
-const AwardTitle = styled.h3``
+const AwardTitle = styled.h3`
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #111;
+    margin-bottom: 3px;
+`
 
-const AwardDescription = styled.span``
+const AwardDescription = styled.span`
+    font-family: "Manrope", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.88023;
+    letter-spacing: 0.02em;
+    color: #282828;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -41px; /* Отступ подчеркивания от текста */
+        left: 0;
+        width: 100%;
+        height: 1px; /* Толщина подчеркивания */
+        background-color: #e2e2e2; /* Цвет подчеркивания */
+    }
+`

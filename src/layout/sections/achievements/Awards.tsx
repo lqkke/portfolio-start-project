@@ -17,6 +17,8 @@ export const Awards = () => {
 
 const StyledAwards = styled.div`
     display: flex;
-    gap: 90px;
+    gap: 60px;
     flex-wrap: wrap;
+    justify-content: center;
+    
 `

@@ -27,7 +27,7 @@ const sections = {
     achievement: {
         img: achievementImg,
         text: 'awards and recognition',
-        width: '353px',
+        width: '727px',
         height: '180px',
         margin: '0 auto',
     },
